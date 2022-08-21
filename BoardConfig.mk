@@ -39,8 +39,8 @@ BOARD_KERNEL_IMAGE_NAME := Image-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_KERNEL_CONFIG := vendor/sm8150-perf_defconfig
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm8150
+BOARD_PREBUILT_DTBIMAGE_DIR := device/oneplus/guacamole-kernel
+BOARD_PREBUILT_DTBOIMAGE := device/guacamole/oneplus-kernel/dtbo.img
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
@@ -128,7 +128,6 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
