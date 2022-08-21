@@ -10,6 +10,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BOARD_VENDOR := oneplus
 
 DEVICE_PATH := device/oneplus/guacamole
+KERNEL_PATH := device/oneplus/guacamole-kernel
 
 # Architecture
 TARGET_ARCH := arm64
@@ -39,8 +40,8 @@ BOARD_KERNEL_IMAGE_NAME := Image-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_PREBUILT_DTBIMAGE_DIR := device/oneplus/guacamole-kernel
-BOARD_PREBUILT_DTBOIMAGE := device/guacamole/oneplus-kernel/dtbo.img
+BOARD_PREBUILT_DTBIMAGE_DIR := $(KERNEL_PATH)
+BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/dtbo.img
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
