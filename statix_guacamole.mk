@@ -31,6 +31,7 @@ PRODUCT_CHARACTERISTICS := nosdcard
 
 # StatiX additions
 INCLUDE_PIXEL_LAUNCHER := true
+TARGET_USES_BLUR := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 3120
