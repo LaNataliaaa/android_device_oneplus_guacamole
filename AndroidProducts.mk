@@ -1,4 +1,3 @@
-
 #
 # Copyright (C) 2019 The LineageOS Project
 #
@@ -6,5 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_guacamole.mk
-	
+    $(LOCAL_DIR)/statix_guacamole.mk
